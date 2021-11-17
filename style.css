@@ -93,8 +93,12 @@ nav{
     justify-content: space-between;
 }
 
-.logo{
+.logo1{
     width: 100%;
+}
+.logo2{
+    width: 100%;
+    display: none;
 }
 
 nav div ul li{
@@ -121,6 +125,13 @@ nav div ul li{
     width: 25px;
     background-color: rgb(157, 157, 157);
     border-radius: 50%;
+}
+
+.nav-section2 ul hr{
+    display: none;
+}
+.nav-options-hide{
+    display: none;
 }
 /* ------------------upgrade----------------- */
 .upgrade{
@@ -295,4 +306,86 @@ footer{
 .btn:hover{
     padding: 10px 40px;
     border-radius: 30px;
+}
+
+/* -----------------media------------------------- */
+
+@media screen and (min-width: 699px) and (max-width: 992px){
+    
+    
+    nav{
+        height: calc(100vh - 100px);
+        width: 250px;
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    .logo1{
+        width: 100%;
+        display: none;
+    }
+    .logo2{
+        width: 65%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    nav div ul li a{
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    nav div ul li{
+        display: flex;
+        align-items: center;
+    }
+    nav div ul li a{
+        display: flex;
+        align-items: center;
+    }
+    nav div ul li img{
+        width: 25px;
+        margin-right: 10px;
+    }
+    .nav-options-hide{
+        display: block;
+    }
+
+    .download-icon{
+        height: 20px;
+    }
+
+    .navsection2-icon-li{
+        width: fit-content;
+    }
+
+    .nav-section2{
+        display: block;
+    }
+    
+    .smaltext{
+        font-size: 14px;
+    }
+    .whitetext{
+        color: white;
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    nav{
+        width: calc(100vw - 250px);
+    }
+    .nav-section2 ul hr{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .uppgradesubcontainer{
+        width: calc(100vw - 270px);
+    }
 }
