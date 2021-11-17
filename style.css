@@ -22,6 +22,47 @@ main{
     overflow: auto;
 }
 
+.maincontent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.maincontent h3{
+    color: white;
+    font-size: 21px;
+    margin: 20px 10px;
+    display: block;
+}
+
+.maincontent .album img, .albumtitle, .albumsub{
+    min-width: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.albumtitle{
+    font-size: 14px;
+}
+.albumsub{
+    font-size: 10px;
+    opacity: .4;
+}
+.album{
+    min-width: 150px;
+    max-width: 200px;
+    text-align: center;
+    width: 45%;
+    margin: 5px;
+}
+.mainrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
 /* ------------------nav----------------- */
 
 nav{
