@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
 }
 
 .main{
@@ -12,21 +11,51 @@
     justify-content: flex-start;
     align-content: flex-start;
 }
-
-nav{
-    height: calc(100vh - 50px);
-    width: 200px;
-    background-color: black;
-    
-}
+/* ------------------main----------------- */
 
 main{
-    height: calc(100vh - 50px);
-    width: calc(100% - 200px);
+    height: calc(100vh - 70px);
+    width: calc(100% - 50px);
     background-color: #141922;
     display: inline-block;
     z-index: 2;
     overflow: auto;
+}
+
+/* ------------------nav----------------- */
+
+nav{
+    height: calc(100vh - 70px);
+    width: 50px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100%;
+}
+
+nav div ul li{
+    margin-top: 10px;
+    opacity: .7;
+}
+
+.download-icon{
+    height: 20px;
+}
+
+.download-icon-li{
+    width: fit-content;
+}
+
+.nav-section2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 /* ------------------upgrade----------------- */
 .upgrade{
@@ -36,8 +65,8 @@ main{
     overflow: hidden;
 }
 .uppgradesubcontainer{
-    height: 50px;
-    width: calc(100vw - 200px);
+    height: 100px;
+    width: calc(100vw - 50px);
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
@@ -48,17 +77,18 @@ main{
 /* ------------------main-header----------------- */
 
 header{
-    margin-top: 50px;
+    margin-top: 100px;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: flex-end;
+    font-size: 14px;
 }
 
 header ul li a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
 }
 
@@ -67,7 +97,7 @@ header ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -80,7 +110,7 @@ header ul li{
 footer{
     display: flex;
     flex-direction: column;
-    height:50px;
+    height:70px;
     width: 100%;
     background-color: #282828;
     position: fixed;
@@ -92,6 +122,7 @@ footer{
     width: 60%;
     margin: auto;
     border: 1px solid greenyellow;
+    margin-top: 3px;
 }
 .btn{
     height: fit-content;
@@ -106,5 +137,5 @@ footer{
 }
 .btn:hover{
     padding: 10px 40px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
