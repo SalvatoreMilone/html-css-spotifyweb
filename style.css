@@ -125,13 +125,14 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .footer-container-left{
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
-    width: 20%;
+    width: 30%;
     align-items: center;
 }
 .current-song-img img{
@@ -142,13 +143,79 @@ footer{
     justify-content: center;
 }
 
-
 .current-song-albumname{
     color: white;
+    font-size: 16px;
 }
+
 .current-song-name{
     color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-left-options{
+    margin-left: 10px;
+}
+
+.footer-left-options a{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.footer-container-center{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.fa-play-circle{
+    font-size: 30px;
+}
+
+.music-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.music-option a{
+    color: white;
+}
+
+.player{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: white;
+    align-items: center;
+}
+.player .playerbar{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    margin: 0 5px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.footer-container-rigth div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container-rigth i{
+    color: white;
+    margin: 0 5px;
     font-size: 15px;
+}
+
+.footer-container-rigth .playerbar{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 60px;
+    margin: 0 5px;
+    height: 4px;
+    border-radius: 4px;
 }
 /* ---------------------------------- */
 .selected{
