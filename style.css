@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    list-style: none;
 }
 
 .main{
@@ -206,7 +209,14 @@ nav div ul li:hover{
 .nav-section-playlist ul li img{
     width: 25px;
 }
-
+.nav-section1 ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.nav-section1 ul li a img{
+    width: 25px;
+}
 
 /* ------------------upgrade----------------- */
 .upgrade{
