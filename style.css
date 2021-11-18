@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
+    overflow: hidden;
 }
 /* ------------------main----------------- */
 
@@ -52,10 +53,6 @@ main{
     text-align: center;
 }
 
-.maincontent .album img{
-    margin-bottom: 10px;
-}
-
 .albumtitle{
     font-size: 14px;
 }
@@ -80,6 +77,42 @@ main{
 .roundalbum img{
     border-radius: 50%;
 }
+
+.album-cover{
+    position: relative;
+    height: fit-content;
+}
+.album-overlay{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.roundalbum .album-cover .album-overlay{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    border-radius: 50%;
+}
+
+.album-overlay a{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);;
+}
+
+.album-overlay a i{
+    font-size: 60px;
+    color: white;
+}
+
+.album:hover .album-overlay{
+    display: block;
+}
 /* ------------------nav----------------- */
 
 nav{
@@ -91,6 +124,7 @@ nav{
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .logo1{
@@ -101,9 +135,12 @@ nav{
     display: none;
 }
 
-nav div ul li{
+nav div ul li:not(.profile-icon){
     margin-top: 10px;
-    opacity: .7;
+    opacity: 50%;
+}
+nav div ul li:hover{
+    opacity: 100%;
 }
 
 .download-icon{
@@ -133,6 +170,10 @@ nav div ul li{
 .nav-options-hide{
     display: none;
 }
+
+.nav-section-playlist{
+    display: none;
+}
 /* ------------------upgrade----------------- */
 .upgrade{
     position: fixed;
@@ -146,7 +187,7 @@ nav div ul li{
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 30px;
     align-items: center;
 }
 
@@ -166,6 +207,10 @@ header ul li a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
+}
+
+header ul li:hover a{
+    color: rgba(255, 255, 255, 1);
 }
 
 header ul{
@@ -201,7 +246,7 @@ footer{
 .footer-container-left{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 150px;
     align-items: center;
 }
 .current-song-img img{
@@ -225,13 +270,17 @@ footer{
     margin-left: 10px;
 }
 
+.footer-container-left .footer-left-options a:hover i{
+    color: white;
+}
+
 .footer-left-options a{
     color: rgba(255, 255, 255, 0.4);
     font-size: 14px;
 }
 
 .footer-container-center{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -243,6 +292,8 @@ footer{
 }
 
 .music-option{
+    width: 50%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -250,21 +301,56 @@ footer{
 }
 .music-option a{
     color: white;
+    margin: 0 1%;
 }
 
 .player{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin: 10px;
     color: white;
     align-items: center;
 }
 .player .playerbar{
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
-    margin: 0 5px;
+    margin: 10px;
     height: 4px;
     border-radius: 4px;
+    position: relative;
+}
+
+.playerbar-progres{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin: 10px;
+    height: 4px;
+    border-radius: 4px;
+    position:absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.playerbar-dot{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 30%;
+    display: none;
+}
+
+.player:hover .playerbar-progres{
+    background-color: greenyellow;
+}
+.player:hover .playerbar-dot{
+    display: block;
+}
+
+.footer-container-rigth{
+    width: 150px;
 }
 
 .footer-container-rigth div{
@@ -301,91 +387,12 @@ footer{
     border: 1px solid white;
     padding: 7px 30px;
     border-radius: 15px;
-    transition: all 1s;
+    transition: all 1500ms;
 }
 .btn:hover{
-    padding: 10px 40px;
+    padding: 10px 35px;
     border-radius: 30px;
 }
 
 /* -----------------media------------------------- */
 
-@media screen and (min-width: 699px) and (max-width: 992px){
-    
-    
-    nav{
-        height: calc(100vh - 100px);
-        width: 250px;
-        background-color: black;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-between;
-        overflow: auto;
-    }
-
-    .logo1{
-        width: 100%;
-        display: none;
-    }
-    .logo2{
-        width: 65%;
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    nav div ul li a{
-        margin-top: 10px;
-        color: white;
-        text-decoration: none;
-    }
-    nav div ul li{
-        display: flex;
-        align-items: center;
-    }
-    nav div ul li a{
-        display: flex;
-        align-items: center;
-    }
-    nav div ul li img{
-        width: 25px;
-        margin-right: 10px;
-    }
-    .nav-options-hide{
-        display: block;
-    }
-
-    .download-icon{
-        height: 20px;
-    }
-
-    .navsection2-icon-li{
-        width: fit-content;
-    }
-
-    .nav-section2{
-        display: block;
-    }
-    
-    .smaltext{
-        font-size: 14px;
-    }
-    .whitetext{
-        color: white;
-        font-size: 20px;
-        opacity: 1;
-    }
-
-    nav{
-        width: calc(100vw - 250px);
-    }
-    .nav-section2 ul hr{
-        display: block;
-        margin: 10px 0;
-    }
-
-    .uppgradesubcontainer{
-        width: calc(100vw - 270px);
-    }
-}
