@@ -10,16 +10,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
-    overflow: hidden;
 }
+
 /* ------------------main----------------- */
 
 main{
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
     width: calc(100% - 50px);
     background-color: #141922;
     display: inline-block;
-    z-index: 2;
     overflow: auto;
 }
 
@@ -116,10 +115,9 @@ main{
 /* ------------------nav----------------- */
 
 nav{
-    height: calc(100vh - 100px);
     width: 50px;
+    height: calc(100vh - 100px);
     background-color: black;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -128,11 +126,26 @@ nav{
 }
 
 .logo1{
-    width: 100%;
+    width: 20px;
 }
 .logo2{
-    width: 100%;
+    width: 100px;
     display: none;
+}
+
+.logosection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div div ul{
+    width: fit-content;
+}
+
+nav div ul li{
+    width: 25px;
 }
 
 nav div ul li:not(.profile-icon){
@@ -141,6 +154,13 @@ nav div ul li:not(.profile-icon){
 }
 nav div ul li:hover{
     opacity: 100%;
+}
+
+.nav-section1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .download-icon{
@@ -183,7 +203,7 @@ nav div ul li:hover{
 }
 .uppgradesubcontainer{
     height: 100px;
-    width: calc(100vw - 50px);
+    width: calc(100vw - 65px);
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
@@ -396,3 +416,26 @@ footer{
 
 /* -----------------media------------------------- */
 
+@media screen and (min-width: 550px){
+    main{
+        height: calc(100vh - 100px);
+        width: calc(100% - 50px);
+    }
+
+    nav{
+        width: 200px;
+    }
+        .logo1{
+            display: none;
+        }
+        .logo2{
+            display: block;
+        }
+
+    footer{
+    }
+
+    .uppgradesubcontainer{
+        width: calc(100vw - 150px);
+    }
+}
