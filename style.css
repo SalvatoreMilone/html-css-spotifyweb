@@ -134,6 +134,7 @@ nav{
 .logo2{
     width: 100px;
     display: none;
+    margin-bottom: 10px;
 }
 
 .logosection{
@@ -151,7 +152,7 @@ nav div ul li{
     width: 25px;
 }
 
-nav div ul li:not(.profile-icon){
+nav div ul li:not(.profile-icon, .playlisthead){
     margin-top: 10px;
     opacity: 50%;
 }
@@ -218,6 +219,22 @@ nav div ul li:hover{
     width: 25px;
 }
 
+.nav-section2 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-section1 ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playlisthead{
+    margin: 20px 0 10px 0;
+}
 /* ------------------upgrade----------------- */
 .upgrade{
     position: fixed;
