@@ -15,7 +15,7 @@
 /* ------------------main----------------- */
 
 main{
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     width: calc(100% - 50px);
     background-color: #141922;
     display: inline-block;
@@ -156,7 +156,7 @@ nav div ul li:hover{
     opacity: 100%;
 }
 
-.nav-section1-container{
+.nav-section1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,16 +194,31 @@ nav div ul li:hover{
 .nav-section-playlist{
     display: none;
 }
+
+.nav-section-playlist ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-section-playlist ul li{
+    width: 100%;
+}
+.nav-section-playlist ul li img{
+    width: 25px;
+}
+
+
 /* ------------------upgrade----------------- */
 .upgrade{
     position: fixed;
     top: 0;
     right: 0;
     overflow: hidden;
+    z-index: 2;
 }
 .uppgradesubcontainer{
     height: 100px;
-    width: calc(100vw - 65px);
+    width: calc(100vw - 50px);
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
@@ -424,6 +439,7 @@ footer{
 
     nav{
         width: 200px;
+        padding: 10px;
     }
         .logo1{
             display: none;
@@ -432,7 +448,21 @@ footer{
             display: block;
         }
 
+        .nav-section1{
+            align-items: flex-start;
+        }
+        .nav-section2{
+            justify-content: flex-start;
+        }
+
+        .nav-section-playlist{
+            display: block;
+        }
+        .nav-options-hide{
+            display: block;
+        }
     footer{
+
     }
 
     .uppgradesubcontainer{
