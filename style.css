@@ -126,6 +126,7 @@ nav{
     align-content: center;
     justify-content: space-between;
     overflow: hidden;
+    padding: 10px 0;
 }
 
 .logo1{
@@ -152,7 +153,25 @@ nav div ul li{
     width: 25px;
 }
 
-nav div ul li:not(.profile-icon, .playlisthead){
+.fa-plus{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.plus-playlist{
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+
+}
+
+nav div ul li:not(.profile-icon-box, .playlisthead){
     margin-top: 10px;
     opacity: 50%;
 }
@@ -179,17 +198,26 @@ nav div ul li:hover{
     display: flex;
     align-content: center;
     justify-content: center;
+    width: 100%;
 }
 
+.nav-section2 ul{
+    width: 100%;
+}
 .profile-icon{
     height: 25px;
     width: 25px;
     background-color: rgb(157, 157, 157);
     border-radius: 50%;
+    margin: 10px 5px 0 0;
 }
 
 .nav-section2 ul hr{
     display: none;
+    margin: 5px 0;
+    opacity: 50%;
+    width: 85%;
+    margin: auto;
 }
 .nav-options-hide{
     display: none;
@@ -222,7 +250,7 @@ nav div ul li:hover{
 .nav-section2 ul li{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .nav-section1 ul li{
     width: 100%;
@@ -235,6 +263,11 @@ nav div ul li:hover{
 .playlisthead{
     margin: 20px 0 10px 0;
 }
+
+.nav-section2 ul li{
+    width: 100%;
+}
+
 /* ------------------upgrade----------------- */
 .upgrade{
     position: fixed;
@@ -466,7 +499,7 @@ footer{
 
     nav{
         width: 200px;
-        padding: 10px;
+        padding: 10px 10;
     }
         .logo1{
             display: none;
@@ -487,6 +520,17 @@ footer{
         }
         .nav-options-hide{
             display: block;
+        }
+        .nav-section2 ul hr{
+            display: block;
+        }
+        .nav-section2 ul li{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        nav ul li{
+            padding-left: 10px;
         }
     footer{
 
