@@ -595,54 +595,6 @@ footer{
 
 
 @media screen and (min-width: 768px){
-    main{
-        height: calc(100vh - 100px);
-        width: calc(100% - 50px);
-    }
-
-    nav{
-        width: 200px;
-        padding: 10px 10;
-    }
-        .logo1{
-            display: none;
-        }
-        .logo2{
-            display: block;
-        }
-
-        .nav-section1{
-            align-items: flex-start;
-        }
-        .nav-section2{
-            justify-content: flex-start;
-        }
-
-        .nav-section-playlist{
-            display: block;
-        }
-        .nav-options-hide{
-            display: block;
-        }
-        .nav-section2 ul hr{
-            display: block;
-        }
-        .nav-section2 ul li{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        nav ul li{
-            padding-left: 10px;
-        }
-        .navselected{
-            display: block;
-        }
-
-    .uppgradesubcontainer{
-        width: calc(100vw - 150px);
-    }
-
 
     .album{
         min-width: 85px;
@@ -656,53 +608,6 @@ footer{
 
 
 @media screen and (min-width: 992px){
-    main{
-        height: calc(100vh - 100px);
-        width: calc(100% - 50px);
-    }
-
-    nav{
-        width: 200px;
-        padding: 10px 10;
-    }
-        .logo1{
-            display: none;
-        }
-        .logo2{
-            display: block;
-        }
-
-        .nav-section1{
-            align-items: flex-start;
-        }
-        .nav-section2{
-            justify-content: flex-start;
-        }
-
-        .nav-section-playlist{
-            display: block;
-        }
-        .nav-options-hide{
-            display: block;
-        }
-        .nav-section2 ul hr{
-            display: block;
-        }
-        .nav-section2 ul li{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        nav ul li{
-            padding-left: 10px;
-        }
-        .navselected{
-            display: block;
-        }
-
-    .uppgradesubcontainer{
-        width: calc(100vw - 150px);
-    }
 
 
     .album{
@@ -717,55 +622,7 @@ footer{
 
 
 @media screen and (min-width: 1200px){
-    main{
-        height: calc(100vh - 100px);
-        width: calc(100% - 50px);
-    }
-
-    nav{
-        width: 200px;
-        padding: 10px 10;
-    }
-        .logo1{
-            display: none;
-        }
-        .logo2{
-            display: block;
-        }
-
-        .nav-section1{
-            align-items: flex-start;
-        }
-        .nav-section2{
-            justify-content: flex-start;
-        }
-
-        .nav-section-playlist{
-            display: block;
-        }
-        .nav-options-hide{
-            display: block;
-        }
-        .nav-section2 ul hr{
-            display: block;
-        }
-        .nav-section2 ul li{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        nav ul li{
-            padding-left: 10px;
-        }
-        .navselected{
-            display: block;
-        }
-
-    .uppgradesubcontainer{
-        width: calc(100vw - 150px);
-    }
-
-
+   
     .album{
         min-width: 90px;
         max-width: 150px;
