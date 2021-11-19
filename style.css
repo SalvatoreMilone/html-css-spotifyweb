@@ -617,6 +617,9 @@ footer{
         width: 47%;
         margin: 5px;
     }
+    .mainrow{
+        flex-wrap: nowrap;
+    }
 }
 
 
@@ -624,11 +627,14 @@ footer{
 @media screen and (min-width: 1200px){
    
     .album{
-        min-width: 90px;
+        min-width: 50px;
         max-width: 150px;
         text-align: center;
         width: 47%;
         margin: 5px;
+    }
+    .mainrow{
+        flex-wrap: nowrap;
     }
 }
 
