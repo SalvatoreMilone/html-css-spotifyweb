@@ -430,16 +430,18 @@ footer{
     margin: 10px;
     height: 4px;
     border-radius: 4px;
-    
+    position: relative;
 }
-
+.footer-container-rigth div .playerbar{
+    position: relative;
+}
 .playerbar-progres{
     background-color: rgb(255, 255, 255);
     width: 10%;
     margin: 10px;
     height: 4px;
     border-radius: 4px;
-    position:relative;
+    position:absolute;
     top: -10px;
     left: -10px;
 }
@@ -450,7 +452,7 @@ footer{
     margin: 10px;
     height: 4px;
     border-radius: 4px;
-    position:relative;
+    position:absolute;
     left: -10px;
 }
 
@@ -459,8 +461,8 @@ footer{
     height: 15px;
     background-color: white;
     border-radius: 50%;
-    position: relative;
-    top: -30px;
+    position: absolute;
+    top: -5px;
     left: 10%;
     display: none;
 }
@@ -470,9 +472,9 @@ footer{
     height: 15px;
     background-color: white;
     border-radius: 50%;
-    position: relative;
-    top: -0px;
-    left: -30px;
+    position: absolute;
+    top: -5px;
+    left: 30%;
     opacity: 0;
 }
 
