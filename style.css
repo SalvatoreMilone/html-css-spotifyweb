@@ -171,11 +171,17 @@ nav div ul li{
 
 }
 
-nav div ul li:not(.profile-icon-box, .playlisthead, .navselected){
+/* nav div ul li:not(.profile-icon-box, .playlisthead, .navselected){
     margin-top: 10px;
     opacity: 50%;
+} */
+
+a:not(.opacity){
+    color: white;
+    opacity: 50%;
 }
-nav div ul li:hover{
+
+a:hover{
     opacity: 100%;
 }
 
@@ -234,6 +240,7 @@ nav div ul li:hover{
 
 .nav-section-playlist ul li{
     width: 100%;
+    margin-top: 10px;
 }
 .nav-section-playlist ul li img{
     width: 25px;
@@ -422,17 +429,27 @@ footer{
     margin: 10px;
     height: 4px;
     border-radius: 4px;
-    position: relative;
+    
 }
 
 .playerbar-progres{
+    background-color: rgb(255, 255, 255);
+    width: 10%;
+    margin: 10px;
+    height: 4px;
+    border-radius: 4px;
+    position:relative;
+    top: -10px;
+    left: -10px;
+}
+
+.playerbar-progres2{
     background-color: rgb(255, 255, 255);
     width: 30%;
     margin: 10px;
     height: 4px;
     border-radius: 4px;
-    position:absolute;
-    top: -10px;
+    position:relative;
     left: -10px;
 }
 
@@ -441,17 +458,34 @@ footer{
     height: 15px;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
-    top: -5px;
-    left: 30%;
+    position: relative;
+    top: -30px;
+    left: 10%;
     display: none;
+}
+
+.playerbar-dot2{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -0px;
+    left: -30px;
+    opacity: 0;
 }
 
 .player:hover .playerbar-progres{
     background-color: greenyellow;
 }
+.playerbar:hover .playerbar-progres2{
+    background-color: greenyellow;
+}
 .player:hover .playerbar-dot{
     display: block;
+}
+.playerbar:hover .playerbar-dot2{
+    opacity: 100%;
 }
 
 .footer-container-rigth{
