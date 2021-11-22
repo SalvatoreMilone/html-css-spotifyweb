@@ -213,12 +213,13 @@ a:hover{
     width: 25px;
     background-color: rgb(157, 157, 157);
     border-radius: 50%;
-    margin: 10px 5px 0 0;
+}
+.profile-icon-box{
+    margin-top: 5px;
 }
 
 .nav-section2 ul hr{
     display: none;
-    margin: 5px 0;
     opacity: 50%;
     width: 85%;
     margin: auto;
@@ -585,10 +586,8 @@ footer{
 
 
     .album{
-        margin: 5px;
-        min-width: 50px;        
-        max-width: 200px;
-        margin: 5px;
+        margin: 5px;       
+        width: 40%;
     }
     .mainrow{
         width: 100%;
@@ -603,17 +602,18 @@ footer{
 @media screen and (min-width: 768px){
     .album{
         margin: 5px;
-        min-width: 100px;
-        max-width: 200px;
-        margin: 5px;
+        width: 20%;
     }
 }
 
 @media screen and (min-width: 992px){
     .album{
         margin: 5px;
-        min-width: 200px;
-        max-width: 250px;
-        margin: 5px;
+        width: 20%;
+    }
+    .mainrow{
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
     }
 }
